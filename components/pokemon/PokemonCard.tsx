@@ -11,7 +11,8 @@ interface Props {
 export const PokemonCard: FC<Props> = ({id, name, img}) => {
   const router = useRouter();
   const onClick = () => {
-    router.push(`/pokemon/${id}`);
+    // router.push(`/pokemon/${id}`);
+    router.push(`/pokemon/${name}`);
   };
   return (
     <Grid xs={6} sm={3} md={2} xl={1}>
